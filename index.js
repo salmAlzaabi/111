@@ -12,10 +12,11 @@ const client = new Client({
 //         الإعدادات - غيّرها هنا
 // =============================================
 const config = {
-  token: 'MTQ0MjQzOTM0Nzc5NzIzMzc0OQ.G-Ms7X.Xtba1_42qOifplA6YVPRdI5LfLJSecbORkMN7s',        // توكن البوت
   imageChannelId: '1515746178074153060', // ID الروم
   warningImage: 'https://cdn.discordapp.com/attachments/1500844249736937602/1515745446071504926/1195827812565798953.png?ex=6a301f73&is=6a2ecdf3&hm=ad4c34e8313b97d39efa80663ae465cc3167b4e7de19ed86f0a938cace899c4f&',
 };
+
+client.login(process.env.TOKEN); // توكن البوت الآمن
 // =============================================
 
 client.once('ready', () => {
